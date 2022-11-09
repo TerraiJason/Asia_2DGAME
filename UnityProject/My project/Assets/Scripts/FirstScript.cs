@@ -1,50 +1,50 @@
-using UnityEngine;
+ï»¿using UnityEngine;
 
 namespace TerraiJason
 {
-    #region µ§°O
-    //³æ¦æµù¸Ñ
+    #region ç­†è¨˜
+    //å–®è¡Œè¨»è§£
 
-    /*¦h¦æµù¸Ñ
-     * ¦h¦æµù¸Ñ
+    /*å¤šè¡Œè¨»è§£
+     * å¤šè¡Œè¨»è§£
      */
 
-    /*¤£¯à¥H¼Æ¦r°µ¶}ÀY
-     * ¥i¥H¥´¤¤¤å¡A¦ýºÉ¶q¤£­n
-     * ¨â­Ó³æ¦r©R¦W¤è¦¡:¦b³æ¤lªº²Ä¤@­Ó¦r¤W­±­n§ï¦¨¤j¼g
-     * ¤j¤p¼gªº­^¤å¦r¥À¬O¤£¦Pªº
+    /*ä¸èƒ½ä»¥æ•¸å­—åšé–‹é ­
+     * å¯ä»¥æ‰“ä¸­æ–‡ï¼Œä½†ç›¡é‡ä¸è¦
+     * å…©å€‹å–®å­—å‘½åæ–¹å¼:åœ¨å–®å­çš„ç¬¬ä¸€å€‹å­—ä¸Šé¢è¦æ”¹æˆå¤§å¯«
+     * å¤§å°å¯«çš„è‹±æ–‡å­—æ¯æ˜¯ä¸åŒçš„
      */
 
-    /*ÁY±Æ:Tab
-     * ®æ¦¡¤Æ¤å¥ó(¦Û°Ê±Æ):Ctrl + K D
+    /*ç¸®æŽ’:Tab
+     * æ ¼å¼åŒ–æ–‡ä»¶(è‡ªå‹•æŽ’):Ctrl + K D
      */
 
-    //ºK­n:¤T­Ó/
+    //æ‘˜è¦:ä¸‰å€‹/
     #endregion
 }
 /// <summary>
-/// ²Ä¤@­Óµ{¦¡
+/// ç¬¬ä¸€å€‹ç¨‹å¼
 /// </summary>
 public class FirstScript : MonoBehaviour
 {
-    #region µ§°O2
-    //³ê¿ô¨Æ¥ó:¹CÀ¸¶}©l®É°õ¦æ¤@¦¸
+    #region ç­†è¨˜2
+    //å–šé†’äº‹ä»¶:éŠæˆ²é–‹å§‹æ™‚åŸ·è¡Œä¸€æ¬¡
     private void Awake()
     {
-        //¿é¥X°T®§:¹CÀ¸¶}©l®É°õ¦æ¤@¦¸
+        //è¼¸å‡ºè¨Šæ¯:éŠæˆ²é–‹å§‹æ™‚åŸ·è¡Œä¸€æ¬¡
         print("Oh Yeah Baby");
     }
 
-    //¶}©l¨Æ¥ó:¦bAwake¤§«á°õ¦æ¤@¦¸
+    //é–‹å§‹äº‹ä»¶:åœ¨Awakeä¹‹å¾ŒåŸ·è¡Œä¸€æ¬¡
     private void Start()
     {
-        print("<color=blue>³o¬O¶}©l¨Æ¥ó</color>");
+        print("<color=blue>é€™æ˜¯é–‹å§‹äº‹ä»¶</color>");
     }
 
-    //§ó·s¨Æ¥ó:¦bStart¤§«á°õ¦æ¡A°õ¦æ¦¸¼Æ¬ù 60 FPS
+    //æ›´æ–°äº‹ä»¶:åœ¨Startä¹‹å¾ŒåŸ·è¡Œï¼ŒåŸ·è¡Œæ¬¡æ•¸ç´„ 60 FPS
     private void Update()
     {
-        print("<color=purple>³o¬O§ó·s¨Æ¥ó</color>");
+        print("<color=purple>é€™æ˜¯æ›´æ–°äº‹ä»¶</color>");
     }
     #endregion
 }

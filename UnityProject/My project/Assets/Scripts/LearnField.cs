@@ -1,44 +1,44 @@
-
+ï»¿
 using UnityEngine;
 
 namespace TerraiJason
 {
     /// <summary>
-    /// Äæ¦ì¾Ç²ß Field
+    /// æ¬„ä½å­¸ç¿’ Field
     /// </summary>
 public class LearnField : MonoBehaviour
 {
-        //Äæ¦ì Field : Àx¦s¸ê®Æ
-        //»yªk:
-        //­×¹¢µü ¸ê®ÆÃş«¬ Äæ¦ì¦WºÙ ;
-        //¨p¤H:priveate ¶È¦b¦¹Ãş§O¤º¯à°÷¦s¨ú¡A¤£Åã¥Ü
+        //æ¬„ä½ Field : å„²å­˜è³‡æ–™
+        //èªæ³•:
+        //ä¿®é£¾è© è³‡æ–™é¡å‹ æ¬„ä½åç¨± ;
+        //ç§äºº:priveate åƒ…åœ¨æ­¤é¡åˆ¥å…§èƒ½å¤ å­˜å–ï¼Œä¸é¡¯ç¤º
         private int lv;
 
-        //µ¥©ó «ü©w²Å¸¹ : ±Nµ¥¸¹¥kÃäªºµ²ªG«ü©wµ¹¥ªÃä
-        //¤½¶}:public ©Ò¦³Ãş§O³£¯à°÷¦s¨ú¡AÅã¥Ü
+        //ç­‰æ–¼ æŒ‡å®šç¬¦è™Ÿ : å°‡ç­‰è™Ÿå³é‚Šçš„çµæœæŒ‡å®šçµ¦å·¦é‚Š
+        //å…¬é–‹:public æ‰€æœ‰é¡åˆ¥éƒ½èƒ½å¤ å­˜å–ï¼Œé¡¯ç¤º
         public int enemy = 5;
 
         public float speed = 3.5f;
         public float run = 9.3f;
 
-        public string playername = "¶W¯ÅÂû";
+        public string playername = "è¶…ç´šé›";
 
         public bool ispass = false;
         public bool hasweapon = true;
 
-        //¼ĞÃD
-        [Header("¦å¶q")]
+        //æ¨™é¡Œ
+        [Header("è¡€é‡")]
         public float hp = 100;
 
-        //´£¥Ü
-        [Tooltip("³]©w§ğÀ»¤O¡A´£¨Ñ¨C¤@¦¸§ğÀ»ªº°ò¥»¶Ë®`")]
+        //æç¤º
+        [Tooltip("è¨­å®šæ”»æ“ŠåŠ›ï¼Œæä¾›æ¯ä¸€æ¬¡æ”»æ“Šçš„åŸºæœ¬å‚·å®³")]
         public float attack = 100;
 
-        //¦b³]©wªº¼Æ­È½d³ò¤º range ¬A©·¸ÌÀY¥ªÃä©ñ³Ì¤p­È¡A¥k¤è©ñ³Ì¤j­È
+        //åœ¨è¨­å®šçš„æ•¸å€¼ç¯„åœå…§ range æ‹¬å¼§è£¡é ­å·¦é‚Šæ”¾æœ€å°å€¼ï¼Œå³æ–¹æ”¾æœ€å¤§å€¼
         [Range(1, 99)]
         public int level = 20;
 
-        //­Y­nÅıprivate¥X²{¦b¤ŞÀº¤¤°µ½Õ¾ã¡A±o¦b«e­±¥[serializeField
+        //è‹¥è¦è®“privateå‡ºç¾åœ¨å¼•æ“ä¸­åšèª¿æ•´ï¼Œå¾—åœ¨å‰é¢åŠ serializeField
         [SerializeField]
         private int countBoomb = 8;
 }
