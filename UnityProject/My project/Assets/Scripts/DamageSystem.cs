@@ -11,6 +11,11 @@ public class DamageSystem : MonoBehaviour
         private string nameTarget;
         [SerializeField, Header("爆炸預製物")]
         private GameObject prefabExplosion;
+        [Header("受傷與爆炸音效")]
+        [SerializeField]
+        private AudioClip soundHit;
+        [SerializeField]
+        private AudioClip soundExplosion;
 
         //碰撞的開始事件 一次
         private void OnCollisionEnter2D(Collision2D collision)
@@ -21,6 +26,9 @@ public class DamageSystem : MonoBehaviour
             if (collision.gameObject.name.Contains(nameTarget))
             {
                 Instantiate(prefabExplosion, transform.position, transform.rotation);
+
+                SoundSystem.instance.PlaySound(soundHit, new Vector2(0.7f, 0.9f));
+                SoundSystem.instance.PlaySound(soundExplosion, new Vector2(1.2f, 1.5f));
 
                 //Destroy 刪除
                 //gameObject 此物件
